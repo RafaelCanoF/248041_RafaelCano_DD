@@ -10,10 +10,17 @@
     <form action="">
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre" placeholder="Ingresa el nombre" id="input_txt_nombre"> 
-        
+        <br>
         <label for="apellido">Apellido</label>
         <input type="text" name="apellido" placeholder="Ingresa el apellido" id="input_txt_apellido"> 
+        <br>
+        <label for="cantidad_correos">Ingrese la cantidad de correos que se va a ingresar</label>
+        <input type="number" name="cantidad_correos" id="cantidad_correos" onchange="cambiarNumero(event)">
+        <br>
+        <div class="contenedor_correos" id="contenedor_correos">
 
+        </div>
+        <br>
         <button type="submit" id="boton_guardar">Guardar datos</button>
     </form>
 

@@ -1,0 +1,91 @@
+/* Fuente personalizada */
+@font-face {
+  font-family: "OverwatchFont";
+  src: url("../recursos/font/big_noodle_titling.ttf") format("truetype");
+}
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+nav{
+    font-family: "OverwatchFont";
+    background-color: #292c31;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #ffffff !important; 
+    font-size: 1.3rem; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f06414 !important;
+}
+
+
+/* PARALLAX PURO CSS */
+.parallax-informacion{
+    background-image:url("../recursos/Overwatch.jpg");
+    height:60vh;
+    background-attachment:fixed;
+    background-position:center;
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.titulo-info{
+    color:white;
+    font-size:3rem;
+    text-shadow:2px 2px 10px black;
+    font-family: "OverwatchFont";
+}
+
+/* Estado inicial animado */
+.tarjeta-info{
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 0.7;
+    transform: translateY(0px);
+}
+
+/* Transformación hover */
+.tarjeta-info:hover{
+    transform: scale(1.08vh);
+}
+
+.info-general{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.titulo-seccion{
+    font-family: "OverwatchFont";
+    font-size: 7vh;
+    color: #f06414;
+}
+
+.descripcion-info{
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+    color: #333;
+}
+
+
+/* Footer */
+
+.text-uppercase{
+        font-family: "OverwatchFont";
+        font-size: 4vh;
+}
+
+
+footer h5{
+    color: #f06414;
+}

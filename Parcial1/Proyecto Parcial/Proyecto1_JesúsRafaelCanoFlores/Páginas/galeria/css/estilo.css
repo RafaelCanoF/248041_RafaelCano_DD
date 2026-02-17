@@ -1,0 +1,128 @@
+/* Fuente del documento */
+@font-face {
+  font-family: "OverwatchFont";
+  src: url("../recursos/font/big_noodle_titling.ttf") format("truetype");
+}
+
+/* Reset básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout general con Grid */
+body{
+    display: grid;
+    grid-template-rows: auto 60vh 1fr;
+}
+
+/* Barra de navegación */
+
+nav{
+    font-family: "OverwatchFont";
+    background-color: #292c31;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #ffffff !important; 
+    font-size: 1.3rem; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f06414 !important;
+}
+
+
+
+/* Parallax puro CSS */
+.seccion-parallax{
+    background-image: url("../recursos/Overwatch2.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-image 0.6s ease;
+    cursor: pointer;
+}
+
+.contenedor-titulo{
+    text-align: center;
+    transition: transform 0.6s ease;
+    font-family: "OverwatchFont";
+}
+
+.titulo-principal{
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px black;
+}
+
+.subtitulo{
+    color: #f06414;
+    font-size: 2rem;
+    margin-top: 15px;
+    transition: opacity 0.4s ease;
+}
+
+/* Contenedor principal */
+.contenedor-principal{
+    padding: 60px;
+    background-color: #111;
+}
+
+/* Grid de tarjetas */
+.contenedor-tarjetas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    perspective: 1000px;
+
+}
+
+.tarjeta{
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.tarjeta img,
+.tarjeta h3,
+.tarjeta p{
+    backface-visibility: hidden;
+}
+
+
+.tarjeta img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.tarjeta h3{
+    color: white;
+    margin-top: 15px;
+}
+
+.tarjeta p{
+    color: #ccc;
+    margin-top: 10px;
+}
+
+/* Footer */
+
+.text-uppercase{
+        font-family: "OverwatchFont";
+        font-size: 4vh;
+}
+
+
+footer h5{
+    color: #f06414;
+}

@@ -1,0 +1,195 @@
+/* Fuente del documento */
+@font-face {
+  font-family: "OverwatchFont";
+  src: url("../Recursos/font/big_noodle_titling.ttf") format("truetype");
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+body{
+    width: 100vw;
+    min-height: 200vh; 
+    background-color: #1f2227;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "header"
+        "main";
+}
+
+nav{
+    font-family: "OverwatchFont";
+    background-color: #292c31;
+    grid-area: nav;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #ffffff !important; 
+    font-size: 1.3rem; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f06414 !important;
+}
+
+header{
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header; 
+}
+
+header img{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+#follaje{
+top: 0;
+    transition: top .1s ease;
+}
+
+#luna{
+    width: 75%;
+    bottom: 0;
+    left: 0;
+}
+
+#moira{
+    width: 75%;
+    bottom: 0;
+    right: 0;
+    transition: top .1s ease-in-out;
+    transition: right .1s ease-in-out;
+}
+
+
+#nubes{
+  top: 0;
+  width: 100%;
+  transition: transform .1s ease;
+}
+
+.titulo{
+    font-family: "OverwatchFont";
+    color: #ffffff;
+    font-size: 13vh;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    z-index: 100;
+    margin: 2vh;
+
+    text-shadow: 5px 0px 0px #f06414;
+
+    transition: right .1s ease-in-out;
+
+    overflow-y: hidden;
+}
+
+main{
+    grid-area: main; 
+}
+
+
+/* ================= BLOG ================= */
+
+h3{
+    overflow-y: hidden;
+}
+
+.seccion-blog{
+    background-color: #1f2227;
+    padding: 80px 40px;
+    min-height: 100vh;
+}
+
+.titulo-blog{
+    font-family: "OverwatchFont";
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Grid obligatorio */
+.contenedor-entradas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+/* Tarjetas */
+.entrada-blog{
+    background-color: #292c31;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Transformación 1 */
+.entrada-blog:hover{
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.entrada-blog img{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.entrada-blog h3{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.entrada-blog p{
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+.boton-leer{
+    margin-top: 15px;
+    padding: 8px 15px;
+    border: none;
+    background-color: #f06414;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Transformación 2 */
+.boton-leer:hover{
+    transform: scale(1.1);
+}
+
+
+/* Footer */
+
+.text-uppercase{
+        font-family: "OverwatchFont";
+        font-size: 4vh;
+}
+
+
+footer h5{
+    color: #f06414;
+}
