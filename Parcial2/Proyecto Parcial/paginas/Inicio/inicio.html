@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poppy Store</title>
+
+<link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="navLeft">
+
+<img class="logo" src="recursos/Poppy_Playtime_Logo.webp">
+
+<a href="inicio.html">Inicio</a>
+
+<a href="../Subir/subir.html" id="adminLink">Subir producto</a>
+
+</div>
+
+<div class="navRight">
+
+<div class="profile" onclick="goProfile()">
+
+<img id="userPhoto">
+
+<span id="userName"></span>
+
+</div>
+
+<button onclick="logout()">Cerrar sesión</button>
+
+</div>
+
+</nav>
+
+
+<main>
+
+<h1 class="title">Productos</h1>
+
+<div id="products" class="productsGrid"></div>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

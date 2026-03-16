@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poppy Store</title>
+
+<link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="navLeft">
+
+<img class="logo" src="recursos/Poppy_Playtime_Logo.webp">
+
+<a href="../Inicio/inicio.html">Inicio</a>
+
+
+</div>
+
+<div class="navRight">
+
+<div class="profile" onclick="goProfile()">
+
+<img id="userPhoto">
+
+<span id="userName"></span>
+
+</div>
+
+<button onclick="logout()">Cerrar sesión</button>
+
+</div>
+
+</nav>
+
+
+<main class="uploadContainer">
+
+<h1 class="title">Panel de productos</h1>
+
+<div class="uploadCard">
+
+<form id="productForm">
+
+<input type="text" id="name" placeholder="Nombre producto" required>
+
+<input type="number" id="price" placeholder="Precio" step="0.01" required>
+
+<div class="photoUpload">
+
+    <img id="preview" src="../recursos/defaultProfile.png">
+
+    <label for="photo" class="uploadBtn">
+        SUBIR FOTO
+    </label>
+
+    <input type="file" id="photo" accept="image/*" required>
+
+</div>
+
+<textarea id="description" placeholder="Descripción"></textarea>
+
+<button type="submit">Agregar producto</button>
+
+</form>
+
+</div>
+
+
+<h2 class="listTitle">Productos actuales</h2>
+
+<div id="productsList" class="productsGrid"></div>
+
+</main>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

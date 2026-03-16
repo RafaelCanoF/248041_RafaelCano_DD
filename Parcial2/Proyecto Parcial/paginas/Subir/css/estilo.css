@@ -1,0 +1,339 @@
+@font-face{
+font-family:"VCR";
+src:url("../../recursos/VCR_OSD_MONO_1.001.ttf");
+}
+
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"VCR", monospace;
+}
+
+body{
+
+background:#111;
+color:white;
+
+min-height:100vh;
+
+}
+
+/* NAVBAR */
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:2vh 3vw;
+
+background:#000;
+
+border-bottom:0.3vh solid red;
+
+}
+
+/* IZQUIERDA */
+
+.navLeft{
+
+display:flex;
+align-items:center;
+gap:2vw;
+
+}
+
+.logo{
+
+height:4vw;
+
+filter: drop-shadow(0 0.5vh 1vh black);
+
+}
+
+/* LINKS */
+
+.navLeft a{
+
+text-decoration:none;
+color:white;
+
+font-size:3vh;
+
+transition:0.2s;
+
+}
+
+.navLeft a:hover{
+
+color:red;
+
+}
+
+/* DERECHA */
+
+.navRight{
+
+display:flex;
+align-items:center;
+gap:1.5vw;
+
+}
+
+/* PERFIL */
+
+.profile{
+
+display:flex;
+align-items:center;
+gap:0.8vw;
+
+cursor:pointer;
+
+transition:0.2s;
+
+}
+
+.profile:hover{
+
+opacity:0.8;
+
+}
+
+/* FOTO PERFIL */
+
+.profile img{
+
+width:8vh;
+height:8vh;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:0.25vh solid red;
+
+}
+
+/* NOMBRE */
+
+.profile span{
+
+font-size:3vh;
+
+}
+
+/* BOTONES */
+
+button{
+
+background:red;
+border:none;
+
+padding:1vh 1.5vw;
+
+color:white;
+
+cursor:pointer;
+
+border-radius:0.6vh;
+
+font-size:3vh;
+
+transition:0.2s;
+
+}
+
+button:hover{
+
+background:#ff2a2a;
+
+transform:scale(1.05);
+
+}
+
+/* CONTENEDOR */
+
+.uploadContainer{
+
+padding:4vh 3vw;
+
+}
+
+.title{
+margin-bottom:4vh;
+font-size: 4vh;
+}
+
+.uploadCard{
+
+background:#1a1a1a;
+
+padding:3vh 3vw;
+
+border-radius:1vh;
+
+margin-bottom:4vh;
+
+border:0.2vh solid #333;
+
+max-width:400px;
+
+}
+
+/* FORM */
+
+form{
+
+display:flex;
+flex-direction:column;
+
+gap:1.5vh;
+
+}
+
+input, textarea{
+
+padding:1vh;
+
+border:none;
+
+border-radius:0.5vh;
+
+}
+
+textarea{
+resize:none;
+height:10vh;
+}
+
+/* PRODUCTOS */
+
+.productsGrid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+
+gap:2vw;
+
+margin-top:2vh;
+
+}
+
+.product{
+
+background:#1a1a1a;
+
+padding:2vh;
+
+border-radius:1vh;
+
+border:0.2vh solid #333;
+
+text-align:center;
+
+}
+
+.product img{
+
+width:100%;
+height:150px;
+
+object-fit:cover;
+
+border-radius:0.5vh;
+
+margin-bottom:1vh;
+
+}
+
+.deleteBtn{
+
+margin-top:1vh;
+
+background:#444;
+
+}
+
+.deleteBtn:hover{
+
+background:#aa0000;
+
+}
+
+
+/* FOTO PERFIL */
+
+.photoUpload{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+gap:1vh;
+
+margin-top:1vh;
+
+}
+
+/* preview imagen */
+
+#preview{
+
+width:16vh;
+height:16vh;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:0.3vh solid red;
+
+background:#111;
+
+}
+
+/* ocultar input real */
+
+#photo{
+
+display:none;
+
+}
+
+/* botón subir */
+
+.uploadBtn{
+width: 18vw;
+
+padding:1vh 2vw;
+
+background:#d00000;
+
+color:white;
+
+cursor:pointer;
+
+font-size:2.5vh;
+
+text-align:center;
+
+border-radius:0.5vh;
+
+transition:0.2s;
+
+
+
+}
+
+.uploadBtn:hover{
+
+background:#ff1a1a;
+transform:scale(1.05);
+
+}

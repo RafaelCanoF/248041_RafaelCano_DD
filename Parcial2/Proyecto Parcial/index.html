@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playtime Co.</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="background">
+
+    <img class="logo" src="recursos/Poppy_Playtime_Logo.webp">
+
+    <div class="menu">
+
+        <form id="loginForm">
+
+            <input type="email" id="loginEmail" placeholder="Correo" required>
+            <input type="password" id="loginPassword" placeholder="Contraseña" required>
+
+            <button type="submit">INICIAR SESIÓN</button>
+
+        </form>
+
+            <form id="registerForm" style="display:none">
+
+            <input type="text" id="name" placeholder="Nombre" required>
+            <input type="email" id="email" placeholder="Correo" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <input type="password" id="confirmPassword" placeholder="Confirmar contraseña" required>
+
+            <div class="photoUpload">
+
+                <img id="preview" src="../recursos/defaultProfile.png">
+
+                <label for="photo" class="uploadBtn">
+                    SUBIR FOTO
+                </label>
+
+                <input type="file" id="photo" accept="image/*">
+
+            </div>
+            <label class="adminCheck">
+            <input type="checkbox" id="admin"> Administrador
+            </label>
+
+            <button type="submit">REGISTRAR</button>
+
+            </form>
+
+            <p class="registerText">¿No tienes cuenta?</p>
+            <button id="toggle" class="registerBtn">Regístrate</button>
+
+    </div>
+
+</div>
+    <script src="js/script.js"></script>
+</body>
+</html>

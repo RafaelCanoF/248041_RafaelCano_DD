@@ -1,0 +1,269 @@
+@font-face{
+    font-family: "VCR";
+    src: url("../recursos/VCR_OSD_MONO_1.001.ttf");
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "VCR", monospace;
+}
+
+body{
+height:auto;
+overflow:hidden;
+font-family: "VCR", monospace;
+}
+
+/* FONDO */
+
+.background{
+
+height:100vh;
+width:100vw;
+
+background-image: url("../recursos/Bg.jpg");
+background-size: cover;
+background-position: center;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+gap:6vh;
+
+padding:5vh;
+
+}
+
+
+/* LOGO */
+
+.logo{
+
+height:26vh;
+
+filter: drop-shadow(0 0.5vh 1vh black);
+
+}
+
+
+/* FORM */
+
+form{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+gap:1vh;
+
+}
+
+
+/* MENU */
+
+.menu{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+background: rgba(0,0,0,0.65);
+
+padding:3.5vh;
+border-radius:1vh;
+
+backdrop-filter: blur(0.6vh);
+
+gap:1.2vh;
+
+width:25vw;
+
+}
+
+
+/* INPUTS */
+
+input{
+
+width:18vw;
+
+padding:1.2vh;
+
+border:none;
+
+border-radius:0.4vh;
+
+background:#eaeaea;
+
+font-family:"VCR";
+
+}
+
+input:focus{
+
+outline:none;
+border:0.25vh solid red;
+
+}
+
+
+/* BOTONES */
+
+button{
+
+width:100%;
+
+padding:1.2vh;
+
+background:#d00000;
+
+color:white;
+
+border:none;
+
+font-family:"VCR";
+
+letter-spacing:0.2vw;
+
+cursor:pointer;
+
+transition:0.2s;
+
+}
+
+button:hover{
+
+background:#ff1a1a;
+
+transform:scale(1.05);
+
+}
+
+
+/* BOTÓN REGISTRO */
+
+.registerBtn{
+
+background:transparent;
+
+color:white;
+
+margin-top:0.3vh;
+font-size:2.5vh;
+
+text-decoration:underline;
+
+width:18vw;
+
+}
+
+.registerBtn:hover{
+
+transform:none;
+
+}
+
+
+/* TEXTO REGISTRO */
+
+.registerText{
+
+margin-top:1vh;
+font-size:2vh;
+color:white;
+opacity:0.8;
+
+}
+
+
+/* FOTO PERFIL */
+
+.photoUpload{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+gap:1vh;
+
+margin-top:1vh;
+
+}
+
+/* preview imagen */
+
+#preview{
+
+width:8vh;
+height:8vh;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:0.3vh solid red;
+
+background:#111;
+
+}
+
+/* ocultar input real */
+
+#photo{
+
+display:none;
+
+}
+
+/* botón subir */
+
+.uploadBtn{
+width: 18vw;
+
+padding:1vh 2vw;
+
+background:#d00000;
+
+color:white;
+
+cursor:pointer;
+
+font-size:2.5vh;
+
+text-align:center;
+
+border-radius:0.5vh;
+
+transition:0.2s;
+
+
+
+}
+
+.uploadBtn:hover{
+
+background:#ff1a1a;
+transform:scale(1.05);
+
+}
+
+/* ADMIN CHECK */
+
+.adminCheck{
+
+display:flex;
+align-items:center;
+gap:0.8vw;
+color:white;
+
+}
+
+.adminCheck input{
+
+width:auto;
+
+}

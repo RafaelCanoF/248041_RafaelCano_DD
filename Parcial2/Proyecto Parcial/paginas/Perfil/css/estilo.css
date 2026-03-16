@@ -1,0 +1,242 @@
+@font-face{
+font-family:"VCR";
+src:url("../../recursos/VCR_OSD_MONO_1.001.ttf");
+}
+
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"VCR", monospace;
+}
+
+body{
+
+background:#111;
+color:white;
+
+min-height:100vh;
+
+}
+@font-face{
+font-family:"VCR";
+src:url("../../recursos/VCR_OSD_MONO_1.001.ttf");
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"VCR", monospace;
+}
+
+body{
+background:#111;
+color:white;
+min-height:100vh;
+}
+
+/* NAVBAR */
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:2vh 3vw;
+
+background:#000;
+
+border-bottom:0.3vh solid red;
+
+}
+
+.logo{
+
+height:4vw;
+
+filter: drop-shadow(0 0.5vh 1vh black);
+
+}
+
+.navLeft{
+display:flex;
+align-items:center;
+gap:2vw;
+}
+
+.navLeft a{
+text-decoration:none;
+color:white;
+font-size:3vh;
+}
+
+.navLeft a:hover{
+color:red;
+}
+
+button{
+
+background:red;
+border:none;
+
+padding:1vh 1.5vw;
+
+color:white;
+
+cursor:pointer;
+
+border-radius:0.6vh;
+
+font-size:3vh;
+
+}
+
+button:hover{
+background:#ff2a2a;
+}
+
+/* CONTENEDOR */
+
+.profileContainer{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+padding:5vh 3vw;
+
+}
+
+/* TARJETA PERFIL */
+
+.profileCard{
+
+background:#1a1a1a;
+
+padding:4vh 3vw;
+
+border-radius:1vh;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+gap:2vh;
+
+width:25vw;
+
+min-width:260px;
+
+border:0.2vh solid #333;
+
+}
+
+/* FOTO PERFIL */
+
+.photoUpload{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+gap:1vh;
+
+margin-top:1vh;
+
+}
+
+/* preview imagen */
+
+#preview{
+
+width:16vh;
+height:16vh;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:0.3vh solid red;
+
+background:#111;
+
+}
+
+/* ocultar input real */
+
+#photo{
+
+display:none;
+
+}
+
+/* botón subir */
+
+.uploadBtn{
+width: 18vw;
+
+padding:1vh 2vw;
+
+background:#d00000;
+
+color:white;
+
+cursor:pointer;
+
+font-size:2.5vh;
+
+text-align:center;
+
+border-radius:0.5vh;
+
+transition:0.2s;
+
+
+
+}
+
+.uploadBtn:hover{
+
+background:#ff1a1a;
+transform:scale(1.05);
+
+}
+
+/* FORM */
+
+form{
+
+display:flex;
+flex-direction:column;
+
+width:100%;
+
+gap:1.5vh;
+
+}
+
+input{
+
+padding:1vh;
+
+border:none;
+
+border-radius:0.5vh;
+
+background:#eaeaea;
+
+font-size:2.5vh;
+
+}
+
+.title{
+
+margin-bottom:3vh;
+
+font-size:4vh;
+
+}

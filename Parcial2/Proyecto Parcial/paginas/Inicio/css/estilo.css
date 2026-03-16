@@ -1,0 +1,257 @@
+@font-face{
+font-family:"VCR";
+src:url("../../recursos/VCR_OSD_MONO_1.001.ttf");
+}
+
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"VCR", monospace;
+}
+
+body{
+
+background:#111;
+color:white;
+
+min-height:100vh;
+
+}
+
+/* NAVBAR */
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:2vh 3vw;
+
+background:#000;
+
+border-bottom:0.3vh solid red;
+
+}
+
+/* IZQUIERDA */
+
+.navLeft{
+
+display:flex;
+align-items:center;
+gap:2vw;
+
+}
+
+.logo{
+
+height:4vw;
+
+filter: drop-shadow(0 0.5vh 1vh black);
+
+}
+
+/* LINKS */
+
+.navLeft a{
+
+text-decoration:none;
+color:white;
+
+font-size:3vh;
+
+transition:0.2s;
+
+}
+
+.navLeft a:hover{
+
+color:red;
+
+}
+
+/* DERECHA */
+
+.navRight{
+
+display:flex;
+align-items:center;
+gap:1.5vw;
+
+}
+
+/* PERFIL */
+
+.profile{
+
+display:flex;
+align-items:center;
+gap:0.8vw;
+
+cursor:pointer;
+
+transition:0.2s;
+
+}
+
+.profile:hover{
+
+opacity:0.8;
+
+}
+
+/* FOTO PERFIL */
+
+.profile img{
+
+width:8vh;
+height:8vh;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:0.25vh solid red;
+
+}
+
+/* NOMBRE */
+
+.profile span{
+
+font-size:3vh;
+
+}
+
+/* BOTONES */
+
+button{
+
+background:red;
+border:none;
+
+padding:1vh 1.5vw;
+
+color:white;
+
+cursor:pointer;
+
+border-radius:0.6vh;
+
+font-size:3vh;
+
+transition:0.2s;
+
+}
+
+button:hover{
+
+background:#ff2a2a;
+
+transform:scale(1.05);
+
+}
+
+/* TITULO */
+
+.title{
+
+padding:3vh 3vw;
+font-size:4vh;
+
+}
+
+/* GRID PRODUCTOS */
+
+.productsGrid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fill,minmax(18vw,1fr));
+
+gap:2vw;
+
+padding:3vh 3vw;
+
+}
+
+/* TARJETAS */
+
+.product{
+
+background:#1a1a1a;
+
+border-radius:1vh;
+
+padding:2vh 1vw;
+
+text-align:center;
+
+transition:0.2s;
+
+border:0.15vh solid #333;
+
+}
+
+.product:hover{
+
+transform:scale(1.05);
+
+border:0.15vh solid red;
+
+cursor: pointer;
+
+}
+
+/* IMAGEN PRODUCTO */
+
+.product img{
+
+width:100%;
+
+height:40vh;
+
+object-fit:cover;
+
+border-radius:0.8vh;
+
+margin-bottom:1vh;
+
+}
+
+/* TITULO PRODUCTO */
+
+.product h3{
+
+margin-bottom:0.5vh;
+
+font-size:3vh;
+
+}
+
+/* DESCRIPCIÓN */
+
+.product p{
+
+font-size:2.5vh;
+
+opacity:0.8;
+
+margin-bottom:0.5vh;
+
+}
+
+/* PRECIO */
+
+.product span{
+
+color:red;
+font-weight:bold;
+
+font-size:4vh;
+
+}

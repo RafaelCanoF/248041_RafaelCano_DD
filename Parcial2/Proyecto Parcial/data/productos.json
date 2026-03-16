@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Huggy Wuggy Plush",
+    "price": 29.99,
+    "image": "../../paginas/Inicio/recursos/HuggyPlush.webp",
+    "description": "Official Huggy Wuggy plush from Poppy Playtime"
+  },
+  {
+    "name": "Poppy Playtime Mug",
+    "price": 14.99,
+    "image": "../../paginas/Inicio/recursos/PoppyMug.webp",
+    "description": "Coffee mug with Poppy Playtime logo"
+  },
+  {
+    "name": "Mommy Long Legs Plush",
+    "price": 34.99,
+    "image": "../../paginas/Inicio/recursos/MommyPlush.webp",
+    "description": "Mommy Long Legs collectible plush"
+  }
+]
