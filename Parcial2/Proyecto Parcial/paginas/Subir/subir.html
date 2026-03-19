@@ -63,6 +63,8 @@
 
 </div>
 
+
+
 <textarea id="description" placeholder="Descripción"></textarea>
 
 <button type="submit">Agregar producto</button>
@@ -70,7 +72,15 @@
 </form>
 
 </div>
+<div class="uploadCard">
 
+<h2>Cargar productos desde JSON</h2>
+
+<input type="file" id="jsonFile" accept=".json">
+
+<button onclick="loadJSON()">Subir JSON</button>
+
+</div>
 
 <h2 class="listTitle">Productos actuales</h2>
 

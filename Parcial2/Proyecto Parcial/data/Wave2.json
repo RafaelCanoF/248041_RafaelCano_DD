@@ -1,0 +1,56 @@
+[
+{
+    "name": "Kissy Missy Plush",
+    "price": 31.99,
+    "image": "../../paginas/Inicio/recursos/KissyPlush.webp",
+    "description": "Soft Kissy Missy plush with bright colors"
+  },
+  {
+    "name": "CatNap Plush",
+    "price": 27.99,
+    "image": "../../paginas/Inicio/recursos/CatPlush.webp",
+    "description": "CatNap plush inspired by Chapter 3"
+  },
+  {
+    "name": "Boxy Boo Figure",
+    "price": 19.99,
+    "image": "../../paginas/Inicio/recursos/BoxyPlush.webp",
+    "description": "Collectible Boxy Boo action figure"
+  },
+  {
+    "name": "GrabPack Toy",
+    "price": 39.99,
+    "image": "../../paginas/Inicio/recursos/GrabToy.webp",
+    "description": "Interactive GrabPack toy with extendable arms"
+  },
+  {
+    "name": "Poppy Playtime T-Shirt",
+    "price": 22.99,
+    "image": "../../paginas/Inicio/recursos/PoppyShirt.webp",
+    "description": "Official Poppy Playtime logo t-shirt"
+  },
+  {
+    "name": "Mini Huggy Keychain",
+    "price": 9.99,
+    "image": "../../paginas/Inicio/recursos/HuggyChain.jpg",
+    "description": "Small Huggy Wuggy keychain for backpacks"
+  },
+  {
+    "name": "Playtime Co. Backpack",
+    "price": 44.99,
+    "image": "../../paginas/Inicio/recursos/Backpack.webp",
+    "description": "Backpack themed after Playtime Co."
+  },
+  {
+    "name": "Poppy Doll Replica",
+    "price": 49.99,
+    "image": "../../paginas/Inicio/recursos/PoppyDoll.webp",
+    "description": "Detailed replica of Poppy doll from the game"
+  },
+  {
+    "name": "Chapter 3 Poster",
+    "price": 12.99,
+    "image": "../../paginas/Inicio/recursos/Chapter3.jpg",
+    "description": "High-quality poster from Chapter 3"
+  }
+]

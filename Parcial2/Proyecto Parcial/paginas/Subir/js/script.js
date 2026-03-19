@@ -197,3 +197,52 @@ reader.readAsDataURL(file)
 }
 
 })
+
+
+
+
+
+
+
+function loadJSON(){
+
+let fileInput = document.getElementById("jsonFile")
+let file = fileInput.files[0]
+
+if(!file){
+alert("Selecciona un archivo JSON")
+return
+}
+
+let reader = new FileReader()
+
+reader.onload = function(e){
+
+try{
+
+let data = JSON.parse(e.target.result)
+
+// Validación básica
+if(!Array.isArray(data)){
+alert("El JSON debe ser un arreglo de productos")
+return
+}
+
+// Guardar y renderizar
+products = data
+localStorage.setItem("products", JSON.stringify(products))
+renderProducts()
+
+alert("Productos cargados correctamente")
+
+}catch(error){
+
+alert("JSON inválido")
+
+}
+
+}
+
+reader.readAsText(file)
+
+}
