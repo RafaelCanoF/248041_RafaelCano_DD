@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Paint</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Toolbar -->
+    <aside class="toolbar">
+        <h3>pínceles</h3>
+
+        <button class="tool pincel activo" data-tooltip="Pincel">
+        <img src="recursos/icons/pencil-svgrepo-com.svg">
+        </button>
+
+        <button class="tool linea" data-tooltip="Línea">
+            <img src="recursos/icons/line-svgrepo-com.svg">
+        </button>
+
+        <button class="tool cuadro" data-tooltip="Cuadro">
+            <img src="recursos/icons/square-svgrepo-com.svg">
+        </button>
+
+        <button class="tool circulo" data-tooltip="Círculo">
+            <img src="recursos/icons/circle-svgrepo-com.svg">
+        </button>
+
+        <button class="tool carita" data-tooltip="Carita">
+            <img src="recursos/icons/emoji-happy-circle-537-svgrepo-com.svg">
+        </button>
+
+        <button class="tool relleno" data-tooltip="Relleno">
+            <img src="recursos/icons/bucket-paint-svgrepo-com.svg">
+        </button>
+
+        <button class="tool borrador" data-tooltip="Borrador">
+            <img src="recursos/icons/eraser-svgrepo-com.svg">
+        </button>
+        <button class="tool sticker-btn" data-tooltip="Sticker">
+                <img src="recursos/icons/sticker-bold-svgrepo-com.svg">
+            </button>
+        <div class="sticker-section">
+            <label for="stickerInput" class="custom-file-upload">
+                Archivo
+            </label>
+            <input type="file" id="stickerInput" accept="image/*" />
+            
+            <div class="sticker-preview">
+                <img id="previewImg" src="" alt="">
+            </div>
+        </div>
+    </aside>
+
+    <!-- Canvas -->
+    <main class="canvas-area">
+        <canvas id="lienzo" width="1000" height="500"></canvas>
+    </main>
+
+    
+
+    <!-- Panel -->
+    <aside class="panel">
+<div class="panel-section">
+    <h3>Opciones</h3>
+
+    <div class="grupo">
+        <label>Color línea</label>
+        <input type="color">
+    </div>
+
+    <div class="grupo">
+        <label>Color relleno</label>
+        <input type="color">
+    </div>
+
+    <div class="grupo">
+        <label>Grosor</label>
+        <input type="range" id="grosorRange" min="1" max="100" value="10">
+        
+        <div class="grosor-control">
+            <input type="number" id="grosorInput" min="1" max="100" value="10">
+            <span>px</span>
+        </div>
+    </div>
+
+    <div class="grupo radio-group">
+        <label class="radio-container">
+            <input type="radio" id="con-relleno" name="relleno" checked>
+            <span class="custom-radio"></span>
+            Con relleno
+        </label>
+        <label class="radio-container">
+            <input type="radio" id="sin-relleno" name="relleno">
+            <span class="custom-radio"></span>
+            Sin relleno
+        </label>
+    </div>
+</div>
+
+    <div class="panel-section">
+        <h3>Acciones</h3>
+    <button id="btn-limpiar">Limpiar</button>
+    <button id="btn-guardar">Guardar</button>
+    </div>
+    <div class="history-controls">
+        <button class="tool undo-btn" data-tooltip="Deshacer">
+            <img src="recursos/icons/undo-svgrepo-com.svg">
+        </button>
+        <button class="tool redo-btn" data-tooltip="Rehacer">
+            <img src="recursos/icons/redo-svgrepo-com.svg">
+        </button>
+    </div>
+
+    <div class="panel-section">
+        <h3>Filtros Rápidos</h3>
+        <div class="filter-list">
+            <button class="filter-btn" data-filter="none">Sin filtro</button>
+            <button class="filter-btn" data-filter="gray">Monocromático</button>
+            <button class="filter-btn" data-filter="red">Escala Rojo</button>
+            <button class="filter-btn" data-filter="green">Escala Verde</button>
+            <button class="filter-btn" data-filter="blue">Escala Azul</button>
+        </div>
+    </div>
+    </aside>
+
+</div>
+<button id="btnToolbar" class="mobile-btn">☰</button>
+<button id="btnPanel" class="mobile-btn right">⚙</button>
+<script type="module" src="js/script.js"></script>
+</body>
+</html>
