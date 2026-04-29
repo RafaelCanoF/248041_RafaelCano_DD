@@ -242,6 +242,20 @@ function redibujarTodo() {
                 data[i] = 0;     // rojo off
                 data[i + 1] = 0; // verde off
             }
+            // Negativo → Invertimos el valor restándolo de 255
+            else if (filtroActual === "negative") {
+                data[i]     = 255 - r; // Rojo invertido
+                data[i + 1] = 255 - g; // Verde invertido
+                data[i + 2] = 255 - b; // Azul invertido
+            }
+
+            // Sepia → Aplicamos la fórmula oficial de pesos de color
+            else if (filtroActual === "sepia") {
+                // La fórmula oficial de Microsoft/W3C para sepia:
+                data[i]     = (r * 0.393) + (g * 0.769) + (b * 0.189);
+                data[i + 1] = (r * 0.349) + (g * 0.686) + (b * 0.168);
+                data[i + 2] = (r * 0.272) + (g * 0.534) + (b * 0.131);
+            }
         }
 
         ctx.putImageData(imageData, 0, 0);
